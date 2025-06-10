@@ -1,21 +1,3 @@
-name: Romantic Timer for Hanna
-
-on:
-  workflow_dispatch:  # Tambahkan ini biar bisa dijalankan manual
-
-jobs:
-  send-love:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Jalankan pesan cinta
-        run: |
-          bash romantic_timer.sh
-
-
-
-
-
-
 name: Romantic Timer for Hanna 💌
 
 on:
