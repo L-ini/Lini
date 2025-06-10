@@ -1,0 +1,19 @@
+name: Romantic Timer for Hanna 💌
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # jalan setiap hari jam 07:00 WIB (00:00 UTC)
+  workflow_dispatch:
+
+jobs:
+  send-love:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set permission to run script
+        run: chmod +x romantic_timer.sh
+
+      - name: Run Romantic Timer Script 💖
+        run: ./romantic_timer.sh
